@@ -13,8 +13,6 @@ setTimeout(() => {
 
 const normalize = str => str.replace(/\s+/g, ' ').trim();
 
-// edge case, user presses shortcut before last message was done and sees the behind the scenes instruction prompt but the message is not sent
-
 const INSTRUCTION = "I wanted some flashcards in this format: Q: question text (newline) A: answer text (two newlines) Do NOT add blank lines before or after separators. DO NOT include anything else in this response except this format.";
 
 document.addEventListener('keydown', e => {
@@ -121,3 +119,4 @@ function createCards(response) {
 
     return cards;
 }
+
